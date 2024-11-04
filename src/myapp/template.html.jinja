@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .birthday-card {
+        font-family: Arial, sans-serif;
+        border: 2px solid #f39c12;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #f9e79f;
+        text-align: center;
+      }
+      .header {
+        font-size: 24px;
+        color: #e74c3c;
+      }
+      .message {
+        font-size: 18px;
+        color: #2c3e50;
+      }
+      .footer {
+        font-size: 16px;
+        color: #8e44ad;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="birthday-card">
+      <div class="header">Happy Birthday, {{ receiver_name}}!</div>
+      <div class="message">
+        Wishing you a day filled with love, joy, and happiness. May all your
+        dreams come true on this special day and always.
+      </div>
+      <div class="footer">
+        Best Wishes,<br />
+        {{ sender_name }}
+      </div>
+    </div>
+  </body>
+</html>
